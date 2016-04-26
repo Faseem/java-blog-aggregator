@@ -51,7 +51,16 @@
 			rules:{
 				name: {
 					required : true,
-					minlength : 3
+					minlength : 3,
+					remote : {
+						url : "<spring:url value='/register/available.html'/>",
+						type : "get",
+						data :{
+							name : function(){
+								return $("#name").val();
+							}
+						}
+					}
 				},
 				email: {
 					required : true,
@@ -72,6 +81,11 @@
 			},
 			unhighlight: function(element) {
 			    $(element).closest('.form-group').removeClass('has-error').addClass('has-success');
+			},
+			messages : {
+				name : {
+					remote : "Such UserName is not available!"
+				}
 			}
 		});
 	});

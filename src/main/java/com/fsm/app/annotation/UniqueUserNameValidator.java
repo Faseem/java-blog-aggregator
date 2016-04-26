@@ -18,7 +18,6 @@ public class UniqueUserNameValidator implements ConstraintValidator<UniqueUserNa
 		
 	}
 
-
 	@Override
 	public boolean isValid(String userName, ConstraintValidatorContext context) {
 		// TODO Auto-generated method stub

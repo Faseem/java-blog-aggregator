@@ -59,25 +59,25 @@ public class InitDbService {
 		//adminUser.setPassword("admin");
 		userRepository.save(adminUser);
 
-		Blog myBlog = new Blog();
+		/*Blog myBlog = new Blog();
 		myBlog.setName("FSM Blog");
 		myBlog.setUrl("http://www.djfaseem.wordpress.com");
 		myBlog.setUser(adminUser);
-		blogRepository.save(myBlog);
+		blogRepository.save(myBlog);*/
 
-		Item item1 = new Item();
+		/*Item item1 = new Item();
 		item1.setTitle("First");
 		item1.setDescription("My Fistrs Discription");
-		item1.setPublishedDate((new Date()).toString());
+		item1.setPublishedDate((new Date()));
 		item1.setBlog(myBlog);
 		itemRepository.save(item1);
 
 		Item item2 = new Item();
 		item2.setTitle("Second");
 		item2.setDescription("My Second Discription");
-		item2.setPublishedDate((new Date()).toString());
+		item2.setPublishedDate((new Date()));
 		item2.setBlog(myBlog);
-		itemRepository.save(item2);
+		itemRepository.save(item2);*/
 
 	}
 }
